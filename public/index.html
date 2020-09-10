@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Upload one image</h1>
+    <form action="image/single/produtos/1" method="post" enctype="multipart/form-data">
+        <input type="file" accept="image/*" name="file">
+        <input type="submit" value="upload">
+    </form>
+    <br/>
+    <h1>Upload multiples images</h1>
+    <form action="image/multiple/produtos/1" method="post" enctype="multipart/form-data">
+        <input type="file" accept="image/*" name="file" multiple>
+        <input type="submit" value="upload">
+    </form>
+    <h1>Edit images</h1>
+    <form action="image/edit/produtos/1/1" method="post" enctype="multipart/form-data">
+        <input type="file" accept="image/*" name="file" multiple>
+        <input type="submit" value="upload">
+    </form>
+</body>
+
+</html>
